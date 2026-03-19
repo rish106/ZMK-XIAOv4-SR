@@ -18,22 +18,26 @@
 
         clear_bt_profile {
             bindings = <&bt BT_CLR>;
-            key-positions = <36 47 0>;
+            key-positions = <0 24 35>;
+            layers = <0>;
         };
 
         bt_sel_zero {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <47 36 1>;
+            key-positions = <1 24 35>;
+            layers = <0>;
         };
 
         bt_sel_one {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <36 47 2>;
+            key-positions = <2 35 24>;
+            layers = <0>;
         };
 
         prefer_bluetooth {
             bindings = <&out OUT_BLE>;
-            key-positions = <36 47 11>;
+            key-positions = <11 35 24>;
+            layers = <0>;
         };
     };
 
