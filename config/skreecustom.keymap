@@ -19,6 +19,16 @@
             bindings = <&bt BT_CLR>;
             key-positions = <36 47>;
         };
+
+        bt_sel_zero {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <47 36 0>;
+        };
+
+        bt_sel_one {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <36 1 47>;
+        };
     };
 
     keymap {
