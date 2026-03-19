@@ -13,33 +13,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        clear_bt_profile {
-            bindings = <&bt BT_CLR>;
-            key-positions = <0 24 35>;
-            layers = <0>;
-        };
-
-        bt_sel_zero {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <1 24 35>;
-            layers = <0>;
-        };
-
-        bt_sel_one {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <2 35 24>;
-            layers = <0>;
-        };
-
-        prefer_bluetooth {
-            bindings = <&out OUT_BLE>;
-            key-positions = <11 35 24>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -59,7 +33,7 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans    &trans  &trans  &trans  &trans  &trans  &out OUT_TOG
 &trans      &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
